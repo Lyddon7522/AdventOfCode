@@ -9,9 +9,9 @@ public class Day01
     {
         var inputPath = System.IO.Path.Combine(Environment.CurrentDirectory, @"day01test.txt");
 
-        var elves = Program.ParseInput(inputPath);
+        var elves = Program.ParseInput(inputPath).Last();
 
-        Assert.Equal(24000, elves.Last());
+        Assert.Equal(24000, elves);
 
     }
 
